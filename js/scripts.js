@@ -17,8 +17,8 @@ $(document).ready(function() {
     var a3 = parseInt($("input:radio[name=thirdQuestion]:checked").val());
     var a4 = parseInt($("input:radio[name=fourthQuestion]:checked").val());
     var a5 = parseInt($("input:radio[name=fifthQuestion]:checked").val());
-    var result = a1 + a2;
-    alert(result);
+    var result = a1 + a2 + a3 + a4 + a5;
+    randomFunction(result);
   });
   // $("#startQuiz").submit(function(event) {
   //   event.preventDefault();
@@ -35,4 +35,12 @@ function isAdult() {
 function notAdult() {
   $(".popup").hide();
   $("#notAdult").show();
+}
+function  randomFunction(result)  {
+   if (result >= 3) {
+    $("#finalResult").text("try b")
+  } else {
+    alert("try A")
+  }
+
 }
