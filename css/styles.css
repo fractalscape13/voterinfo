@@ -1,0 +1,15 @@
+.container  {
+  display: none;
+}
+h1  {
+  text-align: center;
+}
+.popup  {
+  text-align: center;
+}
+button  {
+  margin-top: 15px;
+}
+#notAdult {
+  display: none;
+}
