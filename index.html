@@ -18,7 +18,7 @@
               <div class="well">
                 <form id="ageVerification">
                   <h2>Are you old enough?</h2>
-                  <input id="inputAge" type="text" name="agecheck" value="age"><br>
+                  <input id="inputAge" type="text" name="agecheck" value=""><br>
                   <button type="submit" name="agecheckbutton">Verify</button>
               </form>
               </div>
@@ -29,7 +29,93 @@
         </div>
       </div>
     <div class="container">
-      <p>it works!</p>
+      <form id="theQuiz">
+        <div id="startQuiz">
+          <p>Want to take our quiz?</p>
+          <button type="button" name="startButton">Start</button>
+        </div>
+        <div class="firstPair firstFirst">
+          <div class="radio">
+            <label>
+              <h3>Question 1</h3>
+              <input type="radio" name="firstQuestion" value="0" checked>
+              A
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="firstQuestion" value="1">
+              B
+            </label>
+          </div>
+          <button type="button" name="firstButton">Next</button>
+        </div>
+        <div class="firstPair secondPair">
+          <div class="radio">
+            <label>
+              <h3>Question 2</h3>
+              <input type="radio" name="secondQuestion" value="0" checked>
+              A
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="secondQuestion" value="1">
+              B
+            </label>
+          </div>
+          <button type="button" name="secondButton">Next</button>
+        </div>
+        <div class="secondPair thirdPair">
+          <div class="radio">
+            <label>
+              <h3>Question 3</h3>
+              <input type="radio" name="thirdQuestion" value="0" checked>
+              A
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="thirdQuestion" value="1">
+              B
+            </label>
+          </div>
+          <button type="button" name="thirdButton">Next</button>
+        </div>
+        <div class="thirdPair fourthPair">
+          <div class="radio">
+            <label>
+              <h3>Question 4</h3>
+              <input type="radio" name="fourthQuestion" value="0" checked>
+              A
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="fourthQuestion" value="1">
+              B
+            </label>
+          </div>
+          <button type="button" name="fourthButton">Next</button>
+        </div>
+        <div id="q5" class="fourthPair fifthPair">
+          <div class="radio">
+            <label>
+              <h3>Question 5</h3>
+              <input type="radio" name="fifthQuestion" value="0" checked>
+              A
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="fifthQuestion" value="1">
+              B
+            </label>
+          </div>
+          <button type="submit" name="fifthButton">Submit</button>
+        </div>
+      </form>
+      <p class="fifthPair">your results are:</p>
     </div>
     <div id="notAdult">
       <p>You're too young!</p>

@@ -3,13 +3,28 @@ $(document).ready(function() {
     event.preventDefault();
     var userAge = $("input#inputAge").val();
     var parseAge = parseInt(userAge);
-    if (parseAge >= 18) {
+    if (parseAge >= 21) {
       isAdult();
     } else {
       notAdult();
     }
 
   });
+  $("#theQuiz").submit(function(event) {
+    event.preventDefault();
+    var a1 = parseInt($("input:radio[name=firstQuestion]:checked").val());
+    var a2 = parseInt($("input:radio[name=secondQuestion]:checked").val());
+    var a3 = parseInt($("input:radio[name=thirdQuestion]:checked").val());
+    var a4 = parseInt($("input:radio[name=fourthQuestion]:checked").val());
+    var a5 = parseInt($("input:radio[name=fifthQuestion]:checked").val());
+    var result = a1 + a2;
+    alert(result);
+  });
+  // $("#startQuiz").submit(function(event) {
+  //   event.preventDefault();
+  //   .slideUp(#startQuiz);
+  //
+  // });
 });
 
 function isAdult() {
