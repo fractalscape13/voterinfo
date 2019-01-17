@@ -13,18 +13,21 @@ button  {
 #notAdult {
   display: none;
 }
-/* .firstFirst  {
+#q1  {
   display: none;
 }
-.secondPair {
+#q2 {
   display: none;
 }
-.thirdPair {
+#q3 {
   display: none;
 }
-.fourthPair {
+#q4 {
   display: none;
 }
-.fifthPair {
+#q5 {
   display: none;
-} */
+}
+.theResults {
+  display: none;
+}

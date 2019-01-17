@@ -18,13 +18,35 @@ $(document).ready(function() {
     var a4 = parseInt($("input:radio[name=fourthQuestion]:checked").val());
     var a5 = parseInt($("input:radio[name=fifthQuestion]:checked").val());
     var result = a1 + a2 + a3 + a4 + a5;
+    $("#q5").slideToggle();
+    $(".theResults").slideToggle();
     randomFunction(result);
   });
-  // $("#startQuiz").submit(function(event) {
-  //   event.preventDefault();
-  //   .slideUp(#startQuiz);
-  //
-  // });
+  $("#startQuiz").click(function(event) {
+    $("#startQuiz").slideUp();
+    $("#q1").slideToggle();
+
+  });
+  $("#b1").click(function(event) {
+    $("#q1").slideToggle();
+    $("#q2").slideToggle();
+
+  });
+  $("#b2").click(function(event) {
+    $("#q2").slideToggle();
+    $("#q3").slideToggle();
+
+  });
+  $("#b3").click(function(event) {
+    $("#q3").slideToggle();
+    $("#q4").slideToggle();
+
+  });
+  $("#b4").click(function(event) {
+    $("#q4").slideToggle();
+    $("#q5").slideToggle();
+
+  });
 });
 
 function isAdult() {
@@ -40,7 +62,7 @@ function  randomFunction(result)  {
    if (result >= 3) {
     $("#finalResult").text("try b")
   } else {
-    alert("try A")
+    $("#finalResult").text("try a")
   }
 
 }
