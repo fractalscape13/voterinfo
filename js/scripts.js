@@ -23,7 +23,7 @@ $(document).ready(function() {
     randomFunction(result);
   });
   $("#startQuiz").click(function(event) {
-    $("#startQuiz").slideUp();
+    $(".startQuiz").slideUp();
     $("#q1").slideToggle();
 
   });
@@ -49,6 +49,7 @@ $(document).ready(function() {
   });
 });
 
+
 function isAdult() {
   $(".popup").hide();
   $(".container").show();
@@ -60,9 +61,9 @@ function notAdult() {
 }
 function  randomFunction(result)  {
    if (result >= 3) {
-    $("#finalResult").text("try b")
+    $(".resultA").show();
   } else {
-    $("#finalResult").text("try a")
+    $(".resultB").show();
   }
 
 }

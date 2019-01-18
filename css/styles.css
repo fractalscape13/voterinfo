@@ -1,14 +1,9 @@
-.container  {
-  display: none;
-}
-h1  {
-  text-align: center;
-}
 .popup  {
   text-align: center;
 }
 button  {
   margin-top: 15px;
+  margin-bottom: 15px;
 }
 #notAdult {
   display: none;
@@ -30,4 +25,33 @@ button  {
 }
 .theResults {
   display: none;
+}
+body  {
+  background-image: url(../img/background.jpeg);
+  text-align: center;
+}
+.well {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+.container  {
+  display: none;
+  background-color: rgba(255, 255, 255, 0.75);
+  width: 25%;
+  border-radius: 5px;
+}
+#notAdult {
+  font-size: 600%;
+  text-align: center;
+  color: red;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+.resultA  {
+  display: none;
+}
+.resultB  {
+  display: none;
+}
+#quizTitle  {
+  margin-top: 10px;
+  font-size: 20px;
 }
